@@ -13,7 +13,7 @@ public class SqliteTrackLoader implements TrackerLoader{
             "Milliseconds, title, " +
             "artists.Name as artist from tracks, albums, artists, " +
             "genres where tracks.AlbumId = albums.AlbumId and albums.ArtistId = " +
-            "artists.ArtistsId and tracks.GenreId = genres.GenreId";
+            "artists.ArtistId and tracks.GenreId = genres.GenreId";
 
     public SqliteTrackLoader(Connection connection) {
         this.connection = connection;
